@@ -33,7 +33,80 @@
       </nav>
     </header>
     <main>
+      <section class="parameters-block">
+        <h1>Гостиницы Седоны</h1>
+        <ul class="mini-navigation">
+          <li class="mini-navigation-item">
+            <a href="index.html" class="visually-hidden"></a>Главная</li>
+          <li class="mini-navigation-item">
+            <a>Гостиницы</a>
+          </li>
+        </ul>
+        <form class="parameters" action="catalog.html" method="get">
+          <p class="checkbox-title">Инфраструктура:</p>
+          <label>
+            <input type="checkbox" name="swimmingpools" checked>
+            Бассейны
+          </label>
+          <label>
+            <input type="checkbox" name="parking" checked>
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="wi-fi">
+            Wi-Fi
+          </label>
+          <p class="radio-title">Тип жилья:</p>
+          <label>
+            <input type="radio" name="hotel" checked>
+            Гостиница
+          </label>
+          <label>
+            <input type="radio" name="motel">
+            Мотель
+          </label>
+          <label>
+            <input type="radio" name="apart">
+            Апартаменты
+          </label>
+          <p class="price-title">Стоимость, ₽:</p>
+          <label>
+            <input type="text" name="price-min" placeholder="0">
+            <input type="text" name="price-max" placeholder="9000">
+          </label>
+          <label>
+            <input type="range" name="price-range" min="0" max="9000" value="6000">
+          </label>
+          <input type="submit" name="send" value="Применить" class="submit-button">
+          <input type="submit" name="reset" value="Сбросить" class="reset-button">
+        </form>
+      </section>
+      <section class="placeholder">
+        <section class="placeholder-title">
+          <h2>Найдено гостиниц: 38</h2>
+          <select name="priority" >
+            <option value="cheaper">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <ul class="view-list">
+            <li class="view-item">
+              <a class="visually-hidden">Показать несколько</a>
+            </li>
+            <li class="view-item">
+              <a class="visually-hidden">Показать по одному</a>
+            </li>
+            <li class="view-item">
+              <a class="visually-hidden">Показать списком</a>
+            </li>
+          </ul>
+        </section>
+        <section class="placeholder-item">
+          <article class="amara-resort">
+            <img src="" alt="">
 
+          </article>
+        </section>
+      </section>
     </main>
     <footer class="footer-main">
       <ul class="social-list">
