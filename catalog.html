@@ -16,7 +16,7 @@
             <a href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="hotels.html">Гостиницы</a>
+            <a>Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user-list">
@@ -33,7 +33,144 @@
       </nav>
     </header>
     <main>
-
+      <section class="parameters-block">
+        <h1>Гостиницы Седоны</h1>
+        <ul class="mini-navigation">
+          <li class="mini-navigation-item">
+            <a href="index.html" class="visually-hidden"></a>Главная</li>
+          <li class="mini-navigation-item">
+            <a>Гостиницы</a>
+          </li>
+        </ul>
+        <form class="parameters" action="catalog.html" method="get">
+          <p class="checkbox-title">Инфраструктура:</p>
+          <label>
+            <input type="checkbox" name="swimmingpools" checked>
+            Бассейны
+          </label>
+          <label>
+            <input type="checkbox" name="parking" checked>
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="wi-fi">
+            Wi-Fi
+          </label>
+          <p class="radio-title">Тип жилья:</p>
+          <label>
+            <input type="radio" name="hotel" checked>
+            Гостиница
+          </label>
+          <label>
+            <input type="radio" name="motel">
+            Мотель
+          </label>
+          <label>
+            <input type="radio" name="apart">
+            Апартаменты
+          </label>
+          <p class="price-title">Стоимость, ₽:</p>
+          <label>
+            <input type="text" name="price-min" placeholder="0">
+            <input type="text" name="price-max" placeholder="9000">
+          </label>
+          <label>
+            <input type="range" name="price-range" min="0" max="9000" value="6000">
+          </label>
+          <input type="submit" name="send" value="Применить" class="submit-button">
+          <input type="submit" name="reset" value="Сбросить" class="reset-button">
+        </form>
+      </section>
+      <section class="placeholder">
+        <section class="placeholder-title">
+          <h2>Найдено гостиниц: 38</h2>
+          <select name="priority" >
+            <option value="cheaper">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <ul class="view-list">
+            <li class="view-item">
+              <a class="visually-hidden">Показать несколько</a>
+            </li>
+            <li class="view-item">
+              <a class="visually-hidden">Показать по одному</a>
+            </li>
+            <li class="view-item">
+              <a class="visually-hidden">Показать списком</a>
+            </li>
+          </ul>
+        </section>
+        <article class="placeholder-item">
+            <img src="images/content/amara.jpg" alt="Amara Resort and Spa" width="300" height="212">
+            <h3 class="hotel-name">Amara Resort & Spa</h3>
+            <p class="description">Гостиница</p>
+            <p class="price">От 4000 ₽</p>
+            <a class="button-more">подробнее</a>
+            <button class="to-favorite">в избранное</button>
+            <div class="stars"></div>
+            <p class="rate-button">Рейтинг: 8,5</p>
+        </article>
+        <article class="placeholder-item">
+            <img src="images/content/poco-diablo.jpg" alt="Villas at Poco Diablo" width="300" height="212">
+            <h3 class="hotel-name">Villas at Poco Diablo</h3>
+            <p class="description">Гостиница</p>
+            <p class="price">От 5000 ₽</p>
+            <a class="button-more">подробнее</a>
+            <button class="to-favorite pushed">в избранном</button>
+            <div class="stars"></div>
+            <p class="rate-button">Рейтинг: 9,2</p>
+        </article>
+        <article class="placeholder-item">
+            <img src="images/content/desert-quail.jpg" alt="Desert Quail Inn" width="300" height="212">
+            <h3 class="hotel-name">Desert Quail Inn</h3>
+            <p class="description">Гостиница</p>
+            <p class="price">От 2 500 ₽</p>
+            <a class="button-more">подробнее</a>
+            <button class="to-favorite">в избранное</button>
+            <div class="stars"></div>
+            <p class="rate-button">Рейтинг: 6,9</p>
+        </article>
+        <article class="placeholder-item">
+            <img src="images/content/green-tree.jpg" alt="GreenTree Inn" width="300" height="212">
+            <h3 class="hotel-name">GreenTree Inn</h3>
+            <p class="description">Гостиница</p>
+            <p class="price">От 1 500 ₽</p>
+            <a class="button-more">подробнее</a>
+            <button class="to-favorite">в избранное</button>
+            <div class="stars"></div>
+            <p class="rate-button">Рейтинг: 5,0</p>
+        </article>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-link">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">10</a>
+          </li>
+        </ul>
+      </section>
+      <section class="subscribe-catalog">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <form class="subscribe-form" action="index.html" method="post">
+          <label>
+            <input type="text" name="email" placeholder="Ваш e-mail">
+          </label>
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
     <footer class="footer-main">
       <ul class="social-list">
