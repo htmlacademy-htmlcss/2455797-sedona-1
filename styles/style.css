@@ -1,20 +1,21 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Sans Bold";
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 body {
   background-color: #F2F2F2;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -25,24 +26,20 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-family: "PT Sans Bold", sans-serif;
+.title2 {
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
 
-h3 {
-  font-family: "PT Sans Bold", sans-serif;
+.title3 {
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .visually-hidden {
@@ -50,7 +47,7 @@ ul {
 }
 
 .button {
-  font-family: "PT Sans Bold", sans-serif;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
@@ -66,40 +63,51 @@ ul {
 }
 
 .navigation-list {
-  font-family: "PT Sans Bold", sans-serif;
+  list-style-type: none;
+  font-weight: 700;
   font-size: 20px;
   padding: 20px 16px;
 }
 
+.navigation-user-list {
+  list-style-type: none;
+}
+
 .navigation-user-item-search {
-  background-image: url(/images/search-icon.png);
+  background-image: url(../images/search-icon.png);
   background-repeat: no-repeat;
   padding: 22px 12px;
 }
 
 .navigation-user-item-liked {
-  background-image: url(/images/heart-icon.png);
+  background-image: url(../images/heart-icon.png);
   background-repeat: no-repeat;
   padding: 22px 12px;
 }
 
 .navigation-user-item-wanted .button {
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
 
 .main-title {
-  background-image: url(/images/index-background.jpg);
+  background-image: url(../images/hero.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 485px;
 }
 
 .advantages-title, .services-title, .search-hotel, .footer-main {
   background-color: #FFF;
 }
 
+.advantages-list {
+  list-style-type: none;
+}
+
 .advantages-list p {
-  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -110,62 +118,72 @@ ul {
   background-color: #82B3D3;
 }
 
+.services-list {
+  list-style-type: none;
+}
+
 .services-list p {
-  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
 
 .services-item-housing {
-  background-image: url(/images/house-icon.svg);
+  background-image: url(../images/house-icon.svg);
   background-repeat: no-repeat;
   background-position: top;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .services-item-food {
-  background-image: url(/images/food-icon.svg);
+  background-image: url(../images/food-icon.svg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .services-item-souvenirs {
-  background-image: url(/images/souvenir-icon.svg);
+  background-image: url(../images/souvenir-icon.svg);
   background-repeat: no-repeat;
   background-position: top;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .search-hotel .button {
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
 
 }
 
 .subscribe-main {
-  background-image: url(/images/subscribe-background.png);
+  background-image: url(../images/subscribe-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 96px 104px 258px;
 }
 
 .subscribe-button {
-  font-family: "PT Sans Bold", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   color: #FFF;
   background-color: #82B3D3;
   padding: 0 50px;
 }
 
-.address {
+.social-list {
+  list-style-type: none;
+}
+
+.tel {
   color: #000;
-  font-family: PT Sans;
+  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
+  font-style: normal;
 }
