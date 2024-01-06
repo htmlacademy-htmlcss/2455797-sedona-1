@@ -60,15 +60,15 @@
           </label>
           <p>Тип жилья:</p>
           <label>
-            <input type="radio" name="hotel" checked>
+            <input type="radio" name="housing" checked>
             Гостиница
           </label>
           <label>
-            <input type="radio" name="motel">
+            <input type="radio" name="housing">
             Мотель
           </label>
           <label>
-            <input type="radio" name="apart">
+            <input type="radio" name="housing">
             Апартаменты
           </label>
           <p>Стоимость, ₽:</p>
@@ -76,9 +76,13 @@
             <input type="text" name="price-min" placeholder="0">
             <input type="text" name="price-max" placeholder="9000">
           </label>
-          <label>
-            <input type="range" name="price-range" min="0" max="9000" value="6000">
-          </label>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slider__process"></div>
+              <div class="slider__start-pin"></div>
+              <div class="slider__finish-pin"></div>
+            </div>
+          </div>
           <input type="submit" name="send" value="Применить" class="submit-button">
           <input type="submit" name="reset" value="Сбросить" class="reset-button">
         </form>
@@ -143,7 +147,7 @@
             <p class="rate-button">Рейтинг: 5,0</p>
         </article>
         <ul class="pagination-list">
-          <li class="pagination-item">
+          <li class="pagination-item-pushed">
             <a class="pagination-link">1</a>
           </li>
           <li class="pagination-item">
@@ -155,7 +159,7 @@
           <li class="pagination-item">
             <a class="pagination-link">4</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item-dots">
             <a class="pagination-link">...</a>
           </li>
           <li class="pagination-item">
