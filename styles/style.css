@@ -22,11 +22,14 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333;
-  margin: 0;+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-header, .main-index, .catalog-main, .footer-main {
+.main-header, .main-index, .catalog-main, .footer {
   width: 1200px;
+  margin: 0 auto;
 }
 
 a {
@@ -69,33 +72,72 @@ a {
   background-color: #FFF;
 }
 
+.navigation {
+  display: flex;
+  width: 1060px;
+  height: 64px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navigation-list a:visited {
+  color: #333;
+}
+
 .navigation-list {
   list-style-type: none;
   font-weight: 700;
   font-size: 20px;
+  margin: 0;
+  /* padding: 20px 16px; */
+  padding: 0;
+  width: 450px;
+  display: flex;
+}
+
+.navigation-item {
   padding: 20px 16px;
 }
 
 .navigation-user-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-user-item-search {
   background-image: url(../images/search-icon.png);
   background-repeat: no-repeat;
-  padding: 22px 12px;
+  padding: 20px 20px;
+  margin-top: 20px;
 }
 
 .navigation-user-item-liked {
   background-image: url(../images/heart-icon.png);
   background-repeat: no-repeat;
-  padding: 22px 12px;
+  padding: 20px 20px;
+  margin-top: 20px;
 }
 
 .navigation-user-item-wanted .button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+
+.main-index {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-title {
@@ -109,8 +151,30 @@ a {
   background-color: #FFF;
 }
 
+.advantages-title {
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
 .advantages-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-content: center; */
+}
+
+.advantages-item {
+  width: 230px;
+  height: 179px;
+  padding: 103px 85px;
+}
+
+.advantages-item-image {
+  width: 800px;
+  height: 385px;
 }
 
 .advantages-list p {
@@ -125,8 +189,16 @@ a {
   background-color: #82B3D3;
 }
 
+.services-title {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .services-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  display: flex;
 }
 
 .services-list p {
@@ -138,6 +210,13 @@ a {
 
 .services-item-housing, .services-item-souvenirs {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  padding: 80px 85px;
+}
+
+.services-item-food {
+  width: 400px;
+  padding: 80px 85px;
 }
 
 .services-item-housing::before {
@@ -152,6 +231,10 @@ a {
   content: url(../images/souvenir-icon.svg);
 }
 
+.search-hotel {
+  padding: 96px 304px;
+}
+
 .search-hotel .button {
   font-weight: 700;
   font-size: 20px;
@@ -163,7 +246,30 @@ a {
   background-image: url(../images/subscribe-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 96px 104px 258px;
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form label{
+  margin-left: 258px;
+  display: block;
+  width: 452px;
+}
+
+.subscribe-form input{
+  width: 452px;
+  height: 52px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .subscribe-button {
@@ -177,10 +283,30 @@ a {
   background-color: #82B3D3;
   padding: 0 50px;
   border: none;
+  margin: 0;
+  height: 52px;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-main {
+  width: 1200px;
+  display: flex;
+  padding: 40px 70px 30px;
+  margin: 0 auto;
 }
 
 .social-list {
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.social-item {
+  padding: 10px;
 }
 
 .tel {
@@ -190,6 +316,12 @@ a {
   line-height: 40px;
   text-transform: uppercase;
   font-style: normal;
+  width: 720px;
+  margin: 0 auto;
+}
+
+.tel a {
+  color: #000;
 }
 
 /* Style of catalog.html */
