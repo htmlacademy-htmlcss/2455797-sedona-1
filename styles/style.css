@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #F2F2F2;
   font-family: "PT Sans", Arial, sans-serif;
@@ -25,11 +29,16 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 .main-header, .main-index, .catalog-main, .footer {
   width: 1200px;
   margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 a {
@@ -101,6 +110,12 @@ a {
   display: flex;
 }
 
+.visited a {
+  border-bottom: 2px solid #756157;
+  position: relative;
+  padding-bottom: 16px;
+}
+
 .navigation-item {
   padding: 20px 16px;
 }
@@ -141,10 +156,19 @@ a {
 }
 
 .main-title {
-  background-image: url(../images/hero.svg);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-image: url(../images/bg-index.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   height: 485px;
+  box-sizing: border-box;
+}
+
+.main-title::after {
+  content: url(../images/divider.png);
+  position: relative;
+  bottom: -24px;
 }
 
 .advantages-title, .services-title, .search-hotel, .footer-main {
@@ -152,8 +176,19 @@ a {
 }
 
 .advantages-title {
-  padding-top: 69px;
-  padding-bottom: 69px;
+  padding-top: 61px;
+  padding-bottom: 61px;
+}
+
+.advantages-title h2 {
+  padding-bottom: 21px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.advantages-title p {
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .advantages-list {
@@ -163,13 +198,33 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /* align-content: center; */
 }
 
 .advantages-item {
   width: 230px;
   height: 179px;
   padding: 103px 85px;
+}
+
+.advantages-item h3 {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.advantages-item p {
+  margin: 0;
+  padding-top: 30px;
+}
+
+.decorate-line {
+  width: 60px;
+  height: 2px;
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.30);
+}
+
+.white-line {
+  border-color: rgba(255, 255, 255, 0.30);
 }
 
 .advantages-item-image {
@@ -194,6 +249,15 @@ a {
   padding-bottom: 64px;
 }
 
+.services-title h2 {
+margin: 0;
+padding-bottom: 20px;
+}
+
+.services-title p {
+  margin: 0;
+}
+
 .services-list {
   margin: 0;
   padding: 0;
@@ -208,46 +272,84 @@ a {
   text-align: center;
 }
 
-.services-item-housing, .services-item-souvenirs {
+.services-item {
+  height: 385px;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 80px 85px;
+}
+
+.services-item h3 {
+  margin: 0;
+  padding: 30px 0;
+}
+
+.services-item p{
+  margin: 0;
+}
+
+.services-item::before {
+  position: relative;
+  content:"";
+  width: 75px;
+  height: 75px;
+  display: block;
+  top: 0;
+  left: 75px;
+  background-repeat: no-repeat;
+}
+
+.housing, .souvenirs{
   background-color: rgba(131, 179, 211, 0.12);
-  width: 400px;
-  padding: 80px 85px;
 }
 
-.services-item-food {
-  width: 400px;
-  padding: 80px 85px;
+.housing::before {
+  background-image: url(../images/house-icon.svg);
 }
 
-.services-item-housing::before {
-  content: url(../images/house-icon.svg);
+.food::before {
+  background-image: url(../images/food-icon.svg);
 }
 
-.services-item-food::before {
-  content: url(../images/food-icon.svg);
-}
-
-.services-item-souvenirs::before {
-  content: url(../images/souvenir-icon.svg);
+.souvenirs::before {
+  background-image: url(../images/souvenir-icon.svg);
 }
 
 .search-hotel {
   padding: 96px 304px;
 }
 
+.search-hotel h2 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.search-hotel p {
+  margin: 0;
+  padding-bottom: 54px;
+}
+
 .search-hotel .button {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-
 }
 
 .subscribe-main {
-  background-image: url(../images/subscribe-background.png);
+  background-image: url(../images/subscribe-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 258px 104px;
+}
+
+.subscribe-main h2 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.subscribe-main p {
+  margin: 0;
+  padding-bottom: 54px;
 }
 
 .subscribe-form {
@@ -255,7 +357,6 @@ a {
 }
 
 .subscribe-form label{
-  margin-left: 258px;
   display: block;
   width: 452px;
 }
@@ -336,7 +437,7 @@ a {
 
 .parameters-block {
   background-color: #756157;
-  background-image: url(../images/catalog-bg.png);
+  background-image: url(../images/catalog-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFF;
@@ -344,6 +445,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 23px;
+  display: flex;
 }
 
 .parameters-block h1 {
@@ -501,7 +603,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin: 8px;
-  line-height: 60px;
+  /* line-height: 60px; */
 }
 
 .pagination-item-dots {
