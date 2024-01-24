@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="header">
       <nav class="navigation">
         <img class="logo" src="images/logo.svg" alt="Логотип Sedona" width="140" height="70">
         <ul class="navigation-list">
@@ -16,19 +16,19 @@
           <li class="navigation-item">
             <a href="#">О Седоне</a>
           </li>
-          <li class="navigation-item visited">
-            <a>Гостиницы</a>
+          <li class="navigation-item">
+            <a class="current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user-list">
-          <li class="navigation-user-item-search">
+          <li class="navigation-user-item search">
             <a href="#" class="visually-hidden">Поиск</a>
           </li>
-          <li class="navigation-user-item-liked">
+          <li class="navigation-user-item liked">
             <a href="#" class="visually-hidden">Понравилось</a>
           </li>
-          <li class="navigation-user-item-wanted">
-            <a href="#" class="button">ХОЧУ СЮДА!</a>
+          <li class="navigation-user-item">
+            <a href="#" class="brown-button">ХОЧУ СЮДА!</a>
           </li>
         </ul>
       </nav>
@@ -125,50 +125,74 @@
             </ul>
           </div>
         </section>
-          <div class="placeholder-cards">
+        <section class="placeholder-cards">
             <article class="placeholder-item">
-                <img src="images/content/amara.jpg" alt="Amara Resort and Spa" width="300" height="212">
-                <h3 class="title3">Amara Resort & Spa</h3>
+              <h3 class="card-title">Amara Resort & Spa</h3>
+              <img class="card-picture" src="images/content/amara.jpg" alt="Amara Resort and Spa" width="300" height="212">
+              <div class="description-container">
                 <p class="description">Гостиница</p>
-                <p class="price">От 4000 ₽</p>
-                <a class="button">подробнее</a>
-                <button class="submit-button">в избранное</button>
+              <p class="price">От 4000 ₽</p>
+              </div>
+              <div class="button-container">
+                <a class="brown-button">подробнее</a>
+              <button class="submit-button">в избранное</button>
+              </div>
+              <div class="rate-container">
                 <div class="stars"></div>
-                <p class="rate-button">Рейтинг: 8,5</p>
+              <p class="rate-button">Рейтинг: 8,5</p>
+              </div>
             </article>
             <article class="placeholder-item">
-                <img src="images/content/poco-diablo.jpg" alt="Villas at Poco Diablo" width="300" height="212">
-                <h3 class="title3">Villas at Poco Diablo</h3>
+              <h3 class="card-title">Villas at Poco Diablo</h3>
+              <img class="card-picture" src="images/content/poco-diablo.jpg" alt="Villas at Poco Diablo" width="300" height="212">
+              <div class="description-container">
                 <p class="description">Гостиница</p>
                 <p class="price">От 5000 ₽</p>
-                <a class="button">подробнее</a>
-                <button class="submit-button pushed">в избранном</button>
+              </div>
+              <div class="button-container">
+                <a class="brown-button">подробнее</a>
+              <button class="submit-button-pushed">в избранном</button>
+              </div>
+              <div class="rate-container">
                 <div class="stars"></div>
-                <p class="rate-button">Рейтинг: 9,2</p>
+              <p class="rate-button">Рейтинг: 9,2</p>
+              </div>
             </article>
             <article class="placeholder-item">
-                <img src="images/content/desert-quail.jpg" alt="Desert Quail Inn" width="300" height="212">
-                <h3 class="title3">Desert Quail Inn</h3>
+              <h3 class="card-title">Desert Quail Inn</h3>
+              <img class="card-picture" src="images/content/desert-quail.jpg" alt="Desert Quail Inn" width="300" height="212">
+              <div class="description-container">
                 <p class="description">Гостиница</p>
                 <p class="price">От 2 500 ₽</p>
-                <a class="button">подробнее</a>
+              </div>
+              <div class="button-container">
+                <a class="brown-button">подробнее</a>
                 <button class="submit-button">в избранное</button>
+              </div>
+              <div class="rate-container">
                 <div class="stars"></div>
                 <p class="rate-button">Рейтинг: 6,9</p>
+              </div>
             </article>
             <article class="placeholder-item">
-                <img src="images/content/green-tree.jpg" alt="GreenTree Inn" width="300" height="212">
-                <h3 class="title3">GreenTree Inn</h3>
+              <h3 class="card-title">GreenTree Inn</h3>
+              <img class="card-picture" src="images/content/green-tree.jpg" alt="GreenTree Inn" width="300" height="212">
+              <div class="description-container">
                 <p class="description">Гостиница</p>
                 <p class="price">От 1 500 ₽</p>
-                <a class="button">подробнее</a>
+              </div>
+              <div class="button-container">
+                <a class="brown-button">подробнее</a>
                 <button class="submit-button">в избранное</button>
+              </div>
+              <div class="rate-container">
                 <div class="stars"></div>
                 <p class="rate-button">Рейтинг: 5,0</p>
+              </div>
             </article>
-          </div>
+        </section>
         <ul class="pagination-list">
-          <li class="pagination-item-pushed">
+          <li class="pagination-item pushed">
             <a class="pagination-link">1</a>
           </li>
           <li class="pagination-item">
@@ -180,7 +204,7 @@
           <li class="pagination-item">
             <a class="pagination-link">4</a>
           </li>
-          <li class="pagination-item-dots">
+          <li class="pagination-item dots">
             <a class="pagination-link">...</a>
           </li>
           <li class="pagination-item">
@@ -189,18 +213,18 @@
         </ul>
       </section>
       <section class="subscribe-catalog">
-        <h2 class="title2">Подпишитесь на рассылку</h2>
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="index.html" method="post">
-          <label>
+          <label class="subscribe-form">
             <input type="text" name="email" placeholder="Ваш e-mail">
           </label>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer class="footer-main">
-      <div class="footer-main">
+    <footer class="footer">
+      <div class="footer-container">
         <ul class="social-list">
           <li class="social-item">
             <a href="https://vk.com/htmlacademy"><img src="images/vk.png" alt="Вконтакте"></a>
