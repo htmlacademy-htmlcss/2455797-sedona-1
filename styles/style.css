@@ -25,12 +25,9 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #333;
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
 }
 
@@ -263,6 +260,10 @@ body {
   width: 230px;
   height: 179px;
   padding: 103px 85px;
+}
+
+.advantages-item-img {
+  line-height: 15px;
 }
 
 .advantages-item h3 {
@@ -736,7 +737,7 @@ body {
   box-sizing: border-box;
   width: 292px;
   height: 49px;
-  padding: 14px 20px;
+  padding: 11px 20px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
