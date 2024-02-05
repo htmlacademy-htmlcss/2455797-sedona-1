@@ -55,6 +55,7 @@ body {
   line-height: 20px;
   font-weight: 700;
   display: block;
+  cursor: pointer;
 }
 
 .brown-button:hover {
@@ -910,8 +911,8 @@ body {
   padding: 0;
 }
 
-.button-container .submit-button-pushed {
-  background-color: rgba(125, 181, 79, 1);
+.submit-button-pushed {
+  background-color: #7DB54F;
   margin: 0;
   width: 140px;
   padding: 0;
@@ -923,6 +924,15 @@ body {
   border: none;
   border-radius: 4px;
   color: #FFF;
+  cursor:pointer;
+}
+
+.submit-button-pushed:hover {
+  background-color: #6C9E42;
+}
+
+.submit-button-pushed:active {
+  background-color: #7DB54F;
 }
 
 .rate-button {
@@ -974,6 +984,7 @@ body {
   text-align: center;
   margin: 8px;
   line-height: 60px;
+  cursor: pointer;
 }
 
 .pagination-item:not(.pushed):hover {
@@ -983,11 +994,13 @@ body {
 .pagination-item:not(.pushed):active {
   color: rgba(255, 255, 255, 0.30);
   background-color: #82B3D3;
+
 }
 
 .pushed {
   background-color: #F2F2F2;
   color: #000;
+  cursor: auto;
 }
 
 .dots {
