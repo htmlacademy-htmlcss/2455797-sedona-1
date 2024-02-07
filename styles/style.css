@@ -82,13 +82,14 @@ body {
   display: flex;
   width: 1060px;
   flex-wrap: wrap;
-  padding: 0 70px;
-  margin: 0 auto;
+  /* padding: 0 70px; */
+  /* margin: 0 auto; */
 }
 
 .logo {
   display: block;
-  margin: 0 auto;
+  margin-left: 69px;
+  margin-right: 29px;
   position: relative;
 }
 
@@ -146,6 +147,21 @@ body {
   background-repeat: no-repeat;
   height: 20px;
   width: 42px;
+  position: relative;
+}
+
+.liked::before {
+  content: "12";
+  position: absolute;
+  font-size: 10px;
+  line-height: 19px;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  color: white;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  top: -10px;
 }
 
 .navigation-user-item .brown-button {
@@ -178,7 +194,7 @@ body {
 }
 
 .social-item {
-  padding: 10px;
+  padding: 13px;
 }
 
 .tel {
@@ -190,6 +206,7 @@ body {
   font-style: normal;
   width: 720px;
   margin: 0 auto;
+  padding-top: 5px;
 }
 
 .tel a {
@@ -264,7 +281,7 @@ body {
 }
 
 .advantages-title {
-  padding-top: 61px;
+  padding-top: 68px;
   padding-bottom: 61px;
 }
 
@@ -274,13 +291,13 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 21px;
+  padding-bottom: 25px;
   margin: 0;
 }
 
 .advantages-title p {
   margin: 0;
-  padding-bottom: 0;
+  padding-bottom: 27px;
 }
 
 .advantages-card-title {
@@ -313,6 +330,11 @@ body {
 .advantages-item h3 {
   margin: 0;
   padding-bottom: 30px;
+}
+
+.item-center h3 {
+  margin-top: 11px;
+  padding-bottom: 27px;
 }
 
 .advantages-item p {
@@ -400,7 +422,7 @@ body {
   height: 75px;
   display: block;
   top: 0;
-  left: 75px;
+  left: 77px;
   background-repeat: no-repeat;
 }
 
@@ -433,12 +455,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 
 .search-hotel p {
   margin: 0;
-  padding-bottom: 54px;
+  padding-bottom: 50px;
 }
 
 .search-hotel .brown-button {
@@ -454,7 +476,7 @@ body {
 .subscribe {
   background-image: url(../images/subscribe-bg.jpg);
   background-repeat: no-repeat;
-  padding: 96px 258px 104px;
+  padding: 96px 258px 100px;
 }
 
 .subscribe-title {
@@ -469,11 +491,12 @@ body {
 
 .subscribe p {
   margin: 0;
-  padding-bottom: 54px;
+  padding-bottom: 51px;
 }
 
 .subscribe-form {
   display: flex;
+  padding-bottom: 2px;
 }
 
 .subscribe-form label{
@@ -484,7 +507,7 @@ body {
 .subscribe-form input{
   width: 452px;
   height: 52px;
-  padding: 12px 20px;
+  padding: 12px 18px;
   box-sizing: border-box;
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -497,7 +520,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
+  text-align: justify;
   text-transform: uppercase;
   border-radius: 0 4px 4px 0;
   color: #FFF;
@@ -507,6 +530,8 @@ body {
   margin: 0;
   height: 52px;
   cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 232px;
 }
 
 .subscribe-button:hover {
@@ -581,6 +606,15 @@ body {
 
 .mini-navigation-item {
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.mini-navigation-item a:hover {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.mini-navigation-item a:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .mini-navigation-item::before {
@@ -759,6 +793,7 @@ body {
   padding: 8px 50px;
   margin-bottom: 32px;
   cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .submit-button:hover {
@@ -832,6 +867,17 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #333;
+  border: 2px #E5E5E5 solid;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.select-price:hover {
+  border-color: #68A2CA;
+}
+
+.select-price:active {
+  border-color: #3F5E72;
 }
 
 .view-list {
@@ -901,6 +947,10 @@ body {
   justify-content: space-between;
 }
 
+.star {
+  content: url(../images/star.png);
+}
+
 .card-picture {
   order: -1;
 }
@@ -956,6 +1006,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  text-align: start;
 }
 
 .description, .price {
@@ -970,6 +1021,7 @@ body {
 .pagination-list {
   list-style-type: none;
   display: flex;
+  padding-left: 0;
 }
 
 .pagination-item {
@@ -985,6 +1037,10 @@ body {
   margin: 8px;
   line-height: 60px;
   cursor: pointer;
+}
+
+.pagination-item:first-child {
+  margin-left: 0;
 }
 
 .pagination-item:not(.pushed):hover {
