@@ -142,10 +142,31 @@
         </a>
       </div>
     </footer>
-    <!-- <div class="modal">
+
+    <div class="modal-container">
       <div class="modal-window">
-        <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
+        <button class="close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="check-in" class="label-date">
+              Дата Заезда:
+              <input class="date-input" name="check-in" type="text" placeholder="27 апреля 2020" onfocus="(this.type='date')">
+            </label>
+            <span class="check-input false">Мы не можем отправить вас в прошлое.</span>
+            <label for="check-out" class="label-date">
+              Дата Выезда:
+              <input class="date-input" name="check-out" type="text" placeholder="1 сентября 2023" onfocus="(this.type='date')">
+            </label>
+            <span class="check-input">На эти даты есть свободные номера. Пока есть.</span>
+
+          </form>
+        </section>
+
       </div>
-    </div> -->
+    </div>
+
   </body>
 </html>
