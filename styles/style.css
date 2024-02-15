@@ -273,12 +273,17 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-window {
   position: relative;
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
   width: 717px;
+  border-radius: 30px;
 }
 
 .close-button {
@@ -328,57 +333,202 @@ body {
   opacity: 0.30;
 }
 
+.modal-content{
+  width: 620px;
+  margin: 0 auto;
+}
+
 .modal-title {
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: start;
-  margin: 0;
-  margin-bottom: 64px;
+  color: #000;
+  margin: 0 0 64px 0;
 }
 
 .search-form {
-  display: grid;
-  grid-template-columns: 137px, 165px, 165px, 129px;
-  grid-template-rows: 52px, 44px, 52px, 44px, 52px, 104px;
+  text-align: start;
+}
+
+.search-form-date {
+  margin: 0;
+  justify-content: space-between;
+  display: flex;
+}
+
+.label-date,
+.visitors {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-bottom: 1px;
 }
 
 .date-input {
-  width: 440px;
-  background-color: #F2F2F2;
-  border: none;
-  padding: 12px 20px 12px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
-  font-weight: 700;
-  margin-left: 24px;
-  border-radius: 4px;
-}
-
-.label-date {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: capitalize;
   line-height: 24px;
-  grid-column: 1/-1;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  width: 438px;
+  height: 48px;
+  margin-left: 20px;
+  padding: 0 19px;
 }
 
-span + .label-date {
-  margin-top: 23px;
+.date-input:hover {
+  background-color: #e6e6e6;
+  color: #5c5c5c;
 }
 
 .check-input {
-  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
   line-height: 21px;
-  text-transform: none;
-
+  color: #333333;
+  margin: 4px 0 23px 165px;
+  display: block;
 }
 
-.false {
+.check-input-false {
   color: #FF5757;
-  grid-row: 2;
+}
+
+.visitors-form-block {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.visitors-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visitors-form {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  min-width: 110px;
+  height: 48px;
+  margin-left: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantity {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 20px;
+  background-color: #f2f2f2;
+  border: none;
+  width: 31px;
+  appearance: none;
+  text-align: center;
+}
+
+.children-tooltip {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 1px;
+}
+
+.children-tooltip-content {
+  content: attr(data-tooltip);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  position: absolute;
+  width: 256px;
+  left: 50%;
+  top: 42px;
+  background-color: #333333;
+  padding: 20px 18px 22px 23px;
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s;
+  border-radius: 10px;
+  transform: translate(-50%, 0);
+}
+
+.children-tooltip-content::before {
+  content: "";
+  position: absolute;
+  background-color: #333333;
+  width: 23px;
+  height: 17px;
+  transform: rotate(45deg);
+  left: 46%;
+  bottom: 91%;
+}
+
+.children-tooltip-icon {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+  background-color: #83b3d3;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  padding: 0 11px;
+  vertical-align: middle;
+  align-items: center;
+  display: inline-flex;
+  box-sizing: border-box;
+}
+
+.children-tooltip:hover .children-tooltip-content {
+  opacity: 1;
+  top: 40px;
+}
+
+.button-modal-submit {
+  width: 100%;
+  padding: 18px 256px;
+  margin-top: 48px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: white;
+  background-color: #83B3D3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-modal-submit:hover {
+  background-color: #68A2CA;
+}
+
+.button-modal-submit:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30)
+}
+
+.button-modal-submit:focus {
+  outline: none;
 }
 
                                                                   /* Main page */
