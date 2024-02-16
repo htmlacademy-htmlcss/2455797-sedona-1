@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
   </head>
   <body>
     <header class="header">
@@ -50,32 +51,38 @@
               <div class="container-left-section">
                   <div class="parameters-checkbox">
                     <p>Инфраструктура:</p>
-                      <label>
-                        <input type="checkbox" name="swimmingpools" checked class="checkbox">
-                        Бассейны
+                      <label class="parameters-control">
+                        <input type="checkbox" name="swimming-pools" checked class="visually-hidden control-input">
+                        <span class="checkbox mark"></span>
+                        <span class="parameters-label">Бассейны</span>
                       </label>
-                      <label>
-                        <input type="checkbox" name="parking" checked class="checkbox">
-                        Парковка
+                      <label class="parameters-control">
+                        <input type="checkbox" name="parking" checked class="visually-hidden control-input">
+                        <span class="checkbox mark"></span>
+                        <span class="parameters-label">Парковка</span>
                       </label>
-                      <label>
-                        <input type="checkbox" name="wi-fi">
-                        Wi-Fi
+                      <label class="parameters-control">
+                        <input type="checkbox" name="wi-fi" class="visually-hidden control-input">
+                        <span class="checkbox mark"></span>
+                        <span class="parameters-label">Wi-Fi</span>
                       </label>
                   </div>
                   <div class="parameters-radio">
                     <p>Тип жилья:</p>
-                    <label>
-                      <input type="radio" name="housing" checked class="radio">
-                      Гостиница
+                    <label class="parameters-control">
+                      <input type="radio" name="housing" checked class="visually-hidden control-input">
+                      <span class="radio mark"></span>
+                      <span class="parameters-label">Гостиница</span>
                     </label>
-                    <label>
-                      <input type="radio" name="housing" class="radio">
-                      Мотель
+                    <label class="parameters-control">
+                      <input type="radio" name="housing" class="visually-hidden control-input">
+                      <span class="radio mark"></span>
+                      <span class="parameters-label">Мотель</span>
                     </label>
-                    <label>
-                      <input type="radio" name="housing">
-                      Апартаменты
+                    <label class="parameters-control">
+                      <input type="radio" name="housing" class="visually-hidden control-input">
+                      <span class="radio mark"></span>
+                      <span class="parameters-label">Апартаменты</span>
                     </label>
                   </div>
               </div>
