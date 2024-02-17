@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   </head>
   <body>
     <header class="header">
       <nav class="navigation">
-        <img class="logo" src="images/logo.svg" alt="Логотип Sedona" width="140" height="70">
+        <a href="index.html">
+          <img class="logo" src="images/logo.svg" alt="Логотип Sedona" width="140" height="70">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a href="index.html">Главная</a>
@@ -23,13 +25,13 @@
         </ul>
         <ul class="navigation-user-list">
           <li class="navigation-user-item search">
-            <a href="#" class="visually-hidden">Поиск</a>
+            <a class="visually-hidden" href="#">Поиск</a>
           </li>
           <li class="navigation-user-item liked">
-            <a href="#" class="visually-hidden">Понравилось</a>
+            <a class="visually-hidden" href="#">Понравилось</a>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="brown-button">ХОЧУ СЮДА!</a>
+            <a class="brown-button" href="#">ХОЧУ СЮДА!</a>
           </li>
         </ul>
       </nav>
@@ -39,30 +41,33 @@
         <div class="container-title">
           <h1 class="title1-catalog">Гостиницы Седоны</h1>
           <ul class="mini-navigation">
-            <li class="mini-navigation-item home">
-              <a href="index.html" class="visually-hidden"></a></li>
+            <li class="mini-navigation-item">
+              <a class="mini-navigation-item-link" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none" viewBox="0 0 13 12"><path fill="currentColor" d="m6.393 0-6 5.8V12h12V5.8l-6-5.8Zm5 11h-10V6.2l5-4.8 5 4.8V11Z"/><path fill="currentColor" d="M4.393 10h1V7.5h2V10h1V6.5h-4V10Z"/></svg>
+              </a>
+            </li>
             <li class="mini-navigation-item menu-hotels">
-              <a>Гостиницы</a>
+              <a class="mini-navigation-item-link" href="#">Гостиницы</a>
             </li>
           </ul>
         </div>
         <div class="container-parameters-block">
-          <form class="parameters" action="catalog.html" method="get">
+          <form class="parameters" action="https://echo.htmlacademy.ru/" method="post">
               <div class="container-left-section">
                   <div class="parameters-checkbox">
                     <p>Инфраструктура:</p>
                       <label class="parameters-control">
-                        <input type="checkbox" name="swimming-pools" checked class="visually-hidden control-input">
+                        <input class="visually-hidden control-input" type="checkbox" name="swimming-pools" checked>
                         <span class="checkbox mark"></span>
-                        <span class="parameters-label">Бассейны</span>
+                        <span class="parameters-label">Бассейн</span>
                       </label>
                       <label class="parameters-control">
-                        <input type="checkbox" name="parking" checked class="visually-hidden control-input">
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                         <span class="checkbox mark"></span>
                         <span class="parameters-label">Парковка</span>
                       </label>
                       <label class="parameters-control">
-                        <input type="checkbox" name="wi-fi" class="visually-hidden control-input">
+                        <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                         <span class="checkbox mark"></span>
                         <span class="parameters-label">Wi-Fi</span>
                       </label>
@@ -70,17 +75,17 @@
                   <div class="parameters-radio">
                     <p>Тип жилья:</p>
                     <label class="parameters-control">
-                      <input type="radio" name="housing" checked class="visually-hidden control-input">
+                      <input class="visually-hidden control-input" type="radio" name="housing" checked>
                       <span class="radio mark"></span>
                       <span class="parameters-label">Гостиница</span>
                     </label>
                     <label class="parameters-control">
-                      <input type="radio" name="housing" class="visually-hidden control-input">
+                      <input class="visually-hidden control-input" type="radio" name="housing">
                       <span class="radio mark"></span>
                       <span class="parameters-label">Мотель</span>
                     </label>
                     <label class="parameters-control">
-                      <input type="radio" name="housing" class="visually-hidden control-input">
+                      <input class="visually-hidden control-input" type="radio" name="housing">
                       <span class="radio mark"></span>
                       <span class="parameters-label">Апартаменты</span>
                     </label>
@@ -88,13 +93,13 @@
               </div>
               <div class="parameters-right-section">
                 <div class="parameters-input">
-                  <p>Стоимость, ₽:</p>
+                  <p class="parameters-input-title">Стоимость, ₽:</p>
                   <div class="label-price">
                     <label>
-                      <input type="text" name="price-min" placeholder="0" class="input-price price-min">
+                      <input class="input-price price-min" type="text" name="price-min" placeholder="0">
                     </label>
                     <label>
-                      <input type="text" name="price-max" placeholder="9000" aria-placeholder="до" class="input-price price-max">
+                      <input class="input-price price-max" type="text" name="price-max" placeholder="9000">
                     </label>
                   </div>
                   <div class="slider-container">
@@ -106,8 +111,12 @@
                   </div>
                 </div>
                 <div class="parameters-submit">
-                  <input type="submit" name="send" value="Применить" class="submit-button">
-                  <input type="submit" name="reset" value="Сбросить" class="reset-button">
+                  <label>
+                    <input class="submit-button" type="submit" name="send" value="Применить">
+                  </label>
+                  <label>
+                    <input class="reset-button" type="submit" name="reset" value="Сбросить">
+                  </label>
                 </div>
               </div>
           </form>
@@ -248,8 +257,8 @@
       </section>
       <section class="subscribe-catalog">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        <form class="subscribe-form" action="index.html" method="post">
+        <p class="catalog-subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscribe-form">
             <input type="text" name="email" placeholder="Ваш e-mail">
           </label>
