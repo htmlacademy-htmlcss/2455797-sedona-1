@@ -273,6 +273,8 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+/* Прячет модальное окно */
+
 .modal-container-close {
   display: none;
 }
@@ -395,7 +397,6 @@ body {
   border-radius: 4px;
   width: 482px;
   height: 48px;
-  /* margin-left: 20px; */
   padding: 0 19px;
   box-sizing: border-box;
 }
@@ -423,7 +424,6 @@ body {
 .visitors-form-block {
 
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .visitors-form-container {
