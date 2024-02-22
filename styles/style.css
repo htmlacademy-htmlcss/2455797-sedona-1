@@ -106,8 +106,9 @@ body {
   font-size: 20px;
   margin: 0;
   padding: 0;
-  width: 450px;
+  /* width: 450px; */
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -137,7 +138,7 @@ body {
   margin: 0;
   padding: 0;
   width: 300px;
-  margin-left: 185px;
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -793,7 +794,7 @@ body {
 .subscribe {
   background-image: url(../images/subscribe-bg.jpg);
   background-repeat: no-repeat;
-  padding: 96px 258px 100px;
+  padding: 96px 258px 97px;
 }
 
 .subscribe-title {
