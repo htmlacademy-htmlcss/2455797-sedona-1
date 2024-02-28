@@ -122,9 +122,11 @@
                     <p class="parameters-input-title">Стоимость, ₽:</p>
                     <div class="label-price">
                       <label>
+                        <p class="visually-hidden">цена от</p>
                         <input class="input-price price-min" type="text" name="price-min" value="0">
                       </label>
                       <label>
+                        <p class="visually-hidden">цена до</p>
                         <input class="input-price price-max" type="text" name="price-max" value="9000">
                       </label>
                     </div>
@@ -150,9 +152,7 @@
         </section>
         <section class="placeholder">
           <div class="placeholder-title">
-            <div class="container-placeholder-title">
-              <h2 class="title2">Найдено гостиниц: 38</h2>
-            </div>
+            <h2 class="placeholder-heading">Найдено гостиниц: 38</h2>
             <div class="container-placeholder-menu">
               <select name="priority" class="select-price">
                 <option value="cheaper">Сначала дешевые</option>
@@ -294,6 +294,7 @@
           <p class="catalog-subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe-form">
+              <p class="visually-hidden">Введите Ваш e-mail</p>
               <input class="subscribe-form-input" type="text" name="email" placeholder="Ваш e-mail">
             </label>
             <button class="subscribe-button" type="submit">Подписаться</button>

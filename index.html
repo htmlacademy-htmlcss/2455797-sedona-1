@@ -54,14 +54,14 @@
           <img class="img-sedona" src="images/sedona.svg" alt="Sedona" width="457" height="213">
         </section>
         <section class="advantages-title">
-          <h2 class="advantages-title-h2">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <h2 class="advantages-heading">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
           <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
         <section class="advantages">
           <ul class="advantages-list">
             <li class="advantages-item-block">
               <div class="advantages-item-card">
-                <h3 class="advantages-card-title">Настоящий<br>городок</h3>
+                <h3 class="advantages-card-title title-blocks-card">Настоящий<br>городок</h3>
                 <div class="decorate-line white-line"></div>
                 <p>Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
               </div>
@@ -89,7 +89,7 @@
                 <img src="images/content/devil-bridge.jpg" alt="Мост дьявола" width="800" height="385">
               </div>
               <div class="advantages-item-card">
-                <h3 class="advantages-card-title">Там есть<br>мост дьявола</h3>
+                <h3 class="advantages-card-title title-blocks-card">Там есть<br>мост дьявола</h3>
                 <div class="decorate-line white-line"></div>
                 <p>Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
               </div>
@@ -126,6 +126,7 @@
           <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe-form">
+              <p class="visually-hidden">Введите Ваш e-mail</p>
               <input class="subscribe-form-input" type="text" name="email" placeholder="Ваш e-mail">
             </label>
             <button class="subscribe-button" type="submit">Подписаться</button>
@@ -191,7 +192,10 @@
                         <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
                       </svg>
                     </button>
-                    <input class="quantity" type="text" name="adult" value="2">
+                    <label>
+                      <p class="visually-hidden">Количество взрослых</p>
+                      <input class="quantity" type="text" name="adult" value="2">
+                    </label>
                     <button class="button-plus" type="button">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
@@ -213,7 +217,10 @@
                         <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
                       </svg>
                     </button>
-                    <input class="quantity" type="text" name="children" value="2">
+                    <label>
+                      <p class="visually-hidden">Количество детей</p>
+                      <input class="quantity" type="text" name="children" value="2">
+                    </label>
                     <button class="button-plus" type="button">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
