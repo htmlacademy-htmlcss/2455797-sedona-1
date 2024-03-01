@@ -1482,6 +1482,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-self: end;
+  margin-top: 2px;
 }
 
 .star {
@@ -1576,7 +1577,7 @@ body {
   list-style-type: none;
   display: flex;
   padding-left: 0;
-  margin: 83px 0 -1px;
+  margin: 84px 0 -1px;
   flex-wrap: wrap;
   gap: 8px;
 }
